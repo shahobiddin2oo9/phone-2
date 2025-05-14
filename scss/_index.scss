@@ -1,0 +1,154 @@
+.phone {
+  max-width: 370px;
+  height: 702px;
+  margin: 0 auto;
+  border: 6px solid #818181e6;
+  border-radius: 46px;
+  margin-top: 30px;
+  background-image: url(../img/oboi.jpg);
+  background-color: rgba(0, 0, 0, 0.14);
+  background-blend-mode: darken;
+  background-size: contain;
+  object-fit: cover;
+  box-shadow: rgba(204, 219, 232, 0.481) 3px 1px 12px 0px inset,
+    rgba(255, 255, 255, 0.3) -3px -3px 12px 1px inset;
+  @media (max-width: 406px) {
+    & {
+      height: 690px;
+    }
+  }
+  @media (max-width: 362px) {
+    & {
+      height: 640px;
+    }
+  }
+  @media (max-width: 313px) {
+    & {
+      height: 500px;
+    }
+  }
+  .phone-- {
+    .phone--header {
+      display: flex;
+      .phoneHeader--icon {
+        display: flex;
+        justify-content: space-between;
+        margin: 0 auto;
+        width: 120px;
+        height: 30px;
+        background-color: rgba(0, 0, 0, 0.641);
+        box-shadow: rgba(169, 168, 168, 0.493) 0px 1px 10px 0px;
+        border-radius: 0 0 20px 20px;
+        position: relative;
+        .phoneHeader--icon-camer {
+          position: absolute;
+          right: 12px;
+          top: 8px;
+          width: 11px;
+          height: 11px;
+          border-radius: 100px;
+          background: linear-gradient(
+            90deg,
+            rgb(25, 5, 101) 23%,
+            rgba(26, 119, 156, 0.366) 35%,
+            rgba(13, 59, 157, 0.319) 47%,
+            rgb(5, 64, 89) 58%,
+            rgb(30, 83, 105) 77%
+          );
+        }
+      }
+      .phoneHeader--icon-hour {
+        padding: 10px 0 0 25px;
+        span {
+          color: white;
+          text-align: start;
+        }
+      }
+      .phoneHeader--icon-charg {
+        padding: 10px 55px 0 0px;
+        position: relative;
+        span {
+          position: absolute;
+          color: white;
+          top: 11px;
+          right: 34px;
+          text-align: start;
+          font-size: 10px;
+        }
+        img {
+          top: 2px;
+          right: -7px;
+          position: absolute;
+          width: 80px;
+          height: 30px;
+        }
+      }
+    }
+    .phone--main {
+      padding: 20px 35px;
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      display: flex;
+      flex-wrap: wrap !important;
+      gap: 25px;
+      .icon {
+        a {
+          display: flex;
+          flex-direction: column;
+          gap: 4px;
+          align-items: center;
+          text-decoration: none;
+          color: white;
+          font-family: sans-serif;
+          font-size: 14px;
+          img {
+            width: 50px;
+            height: 50px;
+            cursor: pointer;
+            margin: 0 auto;
+            &:active {
+              transform: scale(0.9);
+            }
+          }
+        }
+      }
+    }
+    .phone--bottom {
+      width: 32 0px;
+      height: 70px;
+      background-color: rgba(198, 196, 225, 0.226);
+      box-shadow: rgba(255, 255, 255, 0.514) 0px 1px 3px;
+      margin: 461px 10px 0 10px;
+      border-radius: 24px;
+      padding: 10px;
+      @media (max-width: 406px) {
+        & {
+          margin: 441px 10px 0 10px;
+        }
+      }
+      @media (max-width: 362px) {
+        & {
+          margin: 401px 10px 0 10px;
+        }
+      }
+      @media (max-width: 313px) {
+        & {
+          margin: 261px 10px 0 10px;
+        }
+      }
+      .budilnik {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        a {
+          img {
+            width: 45px;
+            &:active {
+              transform: scale(0.9);
+            }
+          }
+        }
+      }
+    }
+  }
+}
