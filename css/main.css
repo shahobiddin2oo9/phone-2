@@ -16,6 +16,15 @@ body {
   margin: 0 auto;
 }
 
+.btn-prive {
+  background-color: black;
+}
+.btn-prive a {
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+}
+
 .phone {
   max-width: 370px;
   height: 702px;
@@ -48,6 +57,7 @@ body {
 }
 .phone .phone-- .phone--header {
   display: flex;
+  position: relative;
 }
 .phone .phone-- .phone--header .phoneHeader--icon {
   display: flex;
@@ -88,12 +98,18 @@ body {
   text-align: start;
   font-size: 10px;
 }
-.phone .phone-- .phone--header .phoneHeader--icon-charg img {
+.phone .phone-- .phone--header .phoneHeader--icon-charg .chargegImg {
   top: 2px;
   right: -7px;
   position: absolute;
   width: 80px;
   height: 30px;
+}
+.phone .phone-- .phone--header .phoneHeader--icon-charg .charge--batareyIcon {
+  display: none;
+  position: absolute;
+  top: 10px;
+  right: 21px;
 }
 .phone .phone-- .phone--main {
   padding: 20px 35px;
@@ -103,7 +119,7 @@ body {
   flex-wrap: wrap !important;
   gap: 25px;
 }
-.phone .phone-- .phone--main .icon a {
+.phone .phone-- .phone--main .icon .btn--next a {
   display: flex;
   flex-direction: column;
   gap: 4px;
@@ -113,17 +129,16 @@ body {
   font-family: sans-serif;
   font-size: 14px;
 }
-.phone .phone-- .phone--main .icon a img {
+.phone .phone-- .phone--main .icon .btn--next a img {
   width: 50px;
   height: 50px;
   cursor: pointer;
   margin: 0 auto;
 }
-.phone .phone-- .phone--main .icon a img:active {
+.phone .phone-- .phone--main .icon .btn--next a img:active {
   transform: scale(0.9);
 }
 .phone .phone-- .phone--bottom {
-  width: 32 0px;
   height: 70px;
   background-color: rgba(198, 196, 225, 0.226);
   box-shadow: rgba(255, 255, 255, 0.514) 0px 1px 3px;
@@ -155,6 +170,57 @@ body {
   width: 45px;
 }
 .phone .phone-- .phone--bottom .budilnik a img:active {
+  transform: scale(0.9);
+}
+
+#webcamVideo {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 24px;
+}
+
+.webcamVideo {
+  height: 420px;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  background-position: center;
+  background-size: cover;
+}
+
+#captureBtn {
+  padding: 30px;
+  border-radius: 100px;
+  margin: 0 auto;
+  border: 4px solid rgb(112, 109, 109);
+}
+#captureBtn:active {
+  transform: scale(0.9);
+}
+
+#downloadLink {
+  display: none;
+  margin-left: 10px;
+}
+
+.sdasdas {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+}
+
+.dowlond {
+  background-color: blue;
+  color: white;
+  margin: 10px 10px 0 0px;
+  padding: 5px;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+}
+.dowlond:active {
   transform: scale(0.9);
 }
 
@@ -233,10 +299,36 @@ button:hover {
   background-color: rgba(3, 6, 69, 0.83);
   border-radius: 24px;
   padding: 20px;
-  margin-top: 190px;
+  margin-top: 40px;
   color: white;
 }
 
 #current-time {
   color: white;
+}
+
+.phoneHeader--icon-charg {
+  padding: 10px 55px 0 0px;
+  position: relative;
+}
+.phoneHeader--icon-charg span {
+  position: absolute;
+  color: white;
+  top: 11px;
+  right: 34px;
+  text-align: start;
+  font-size: 10px;
+}
+.phoneHeader--icon-charg .chargegImg {
+  top: 2px;
+  right: -7px;
+  position: absolute;
+  width: 80px;
+  height: 30px;
+}
+.phoneHeader--icon-charg .charge--batareyIcon {
+  display: none;
+  position: absolute;
+  top: 10px;
+  right: 21px;
 }

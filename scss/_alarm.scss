@@ -70,9 +70,34 @@ button:hover {
   background-color: rgba(3, 6, 69, 0.83);
   border-radius: 24px;
   padding: 20px;
-  margin-top: 190px;
+  margin-top: 40px;
   color: white;
 }
 #current-time {
   color: white;
+}
+.phoneHeader--icon-charg {
+  padding: 10px 55px 0 0px;
+  position: relative;
+  span {
+    position: absolute;
+    color: white;
+    top: 11px;
+    right: 34px;
+    text-align: start;
+    font-size: 10px;
+  }
+  .chargegImg {
+    top: 2px;
+    right: -7px;
+    position: absolute;
+    width: 80px;
+    height: 30px;
+  }
+  .charge--batareyIcon {
+    display: none;
+    position: absolute;
+    top: 10px;
+    right: 21px;
+  }
 }
