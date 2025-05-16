@@ -12,6 +12,7 @@
   object-fit: cover;
   box-shadow: rgba(204, 219, 232, 0.481) 3px 1px 12px 0px inset,
     rgba(255, 255, 255, 0.3) -3px -3px 12px 1px inset;
+  overflow: hidden;
   @media (max-width: 406px) {
     & {
       height: 690px;
@@ -148,7 +149,7 @@
       height: 70px;
       background-color: rgba(198, 196, 225, 0.226);
       box-shadow: rgba(255, 255, 255, 0.514) 0px 1px 3px;
-      margin: 461px 10px 0 10px;
+      margin: 360px 10px 0 10px;
       border-radius: 24px;
       padding: 10px;
       @media (max-width: 406px) {

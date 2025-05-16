@@ -4,6 +4,8 @@ let phone = document.querySelector(".phone");
 let icon = document.querySelector(".icon");
 let chargeBatareyIcon = document.querySelector(".charge--batareyIcon");
 let chatgegImgSpan = document.querySelector(".chatgeg--img-span");
+let prevBtn = document.querySelector(".btn-prive");
+let nextBtn = document.querySelector(".btn--next");
 setInterval(() => {
   let date = new Date();
   let a = date.toLocaleTimeString();
@@ -34,20 +36,14 @@ setInterval(() => {
 //   document.querySelector(".chatgeg--img").classList.add("charget--batary");
 // }, 2000);
 
-//
-console.log(history);
+if (prevBtn) {
+  prevBtn.addEventListener("click", () => {
+    history.back();
+  });
+}
 
-const prevBtn = document.querySelector(".btn--next");
-const nextBtn = document.querySelector(".btn--prive");
-
-nextBtn.addEventListener("click", () => {
-  history.forward();
-  // history.go(1);
-  // history.pushState({}, "", "camera.html");
-});
-
-prevBtn.addEventListener("click", () => {
-  // history.back();
-  // history.go(-1);
-  history.pushState({}, "", "index.html");
-});
+if (nextBtn) {
+  nextBtn.addEventListener("click", () => {
+    history.go(1);
+  });
+}

@@ -1,0 +1,44 @@
+.allImg {
+  width: 320px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.first--img img {
+  width: 320px;
+  height: 400px;
+  display: block;
+  margin-bottom: 10px;
+  object-fit: cover;
+  background-size: cover;
+  background-position: center;
+}
+
+.child--img {
+  display: flex;
+  overflow-x: auto;
+  gap: 10px;
+  padding: 10px 0;
+  width: 100%;
+  scroll-behavior: smooth;
+}
+.child--img::-webkit-scrollbar {
+  display: none;
+}
+
+.child--img img {
+  width: 100px;
+  height: 80px;
+  object-fit: cover;
+  flex-shrink: 0;
+  user-select: none;
+}
+.allImg-main {
+  padding: 20px !important;
+}
+.phone--galary {
+  background-color: rgba(5, 0, 109, 0.801);
+  background-image: none;
+}
